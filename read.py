@@ -27,3 +27,14 @@ for d in data:
 print('一共有', len(good), '筆留言含有good')
 
 print(good[0])
+
+godness = [1 for d in data if 'good' in d]
+
+print(godness)
+
+#快寫: good = [d for d in data if 'good' in d]...為23-26
+#d 也可以裝布林值或者其他數字來代表之
+
+bad = ['bad' in d for d in data] # 'bad' in d 變成布林值判斷
+
+print(bad)
